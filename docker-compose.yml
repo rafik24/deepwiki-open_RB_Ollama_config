@@ -2,7 +2,7 @@ services:
   deepwiki:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-ollama-local
     ports:
       - "${PORT:-8001}:${PORT:-8001}"  # API port
       - "3000:3000"  # Next.js port
